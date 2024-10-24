@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Frame Layout</title>
+    <style>
+        /* Basic styling for the layout */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .frame-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top-row {
+            display: flex;
+            width: 100%;
+            height: 50%;
+        }
+        .left-column, .right-column {
+            border: 1px solid #ccc;
+        }
+        .left-column {
+            width: 30%;
+        }
+        .right-column {
+            width: 70%;
+        }
+        .bottom-frame {
+            flex: 1;
+            border: 1px solid #ccc;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame-container">
+        <div class="top-row">
+            <div class="left-column">
+                <iframe src="Assinment-2.html" name="frame1"></iframe>
+                <a href="http://172.16.216.1:8090/httpclient.html" target="frame1">Open in left frame</a>
+            </div>
+            <div class="right-column">
+                <iframe src="Assinment-3.html" name="frame2"></iframe>
+                <a href="http://172.16.216.1:8090/httpclient.html" target="frame2">Open in right frame</a>
+            </div>
+        </div>
+        <div class="bottom-frame">
+            <iframe src="Assinment-4.html" name="frame3"></iframe>
+            <a href="http://172.16.216.1:8090/httpclient.html" target="frame3">Open in bottom frame</a>
+        </div>
+    </div>
+</body>
+</html>
