@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        // JavaScript to print "Hello, World!" to the page
+        function displayMessage() {
+            document.getElementById("message").innerText = "Hello, World!";
+        }
+
+        // Call the function when the page loads
+        window.onload = displayMessage;
+    </script>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p id="message"></p>
+</body>
+</html>

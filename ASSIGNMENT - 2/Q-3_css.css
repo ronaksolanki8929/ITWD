@@ -1,0 +1,44 @@
+body {
+    color: #333;
+}
+body {
+    background-color: #f0f0f0;
+}
+h1, h2, p {
+    font-family: 'Arial', sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #4CAF50;
+}
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header, footer {
+    border: 1px solid #4CAF50;
+    padding: 10px;
+}
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+ul {
+    list-style-type: square;
+}
+p {
+    padding: 10px;
+}
+a {
+    cursor: pointer;
+}
